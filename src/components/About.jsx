@@ -11,6 +11,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import frontendImage from "../assets/frontendimg.gif";
 import backendImage from "../assets/backendimg.gif"; 
+import flip from "../assets/arrow.png"; 
 
 // New DistortingImage component with animation on isFlipped change
 const DistortingImage = ({ src, alt, isFlipped }) => {
@@ -87,7 +88,7 @@ const ServiceCard = ({ index, title, icon, backendIcon, onFlip }) => {
             </>
           )}
 
-          <img className="h-auto w-7" src="src/assets/arrow.png" alt="" />
+          <img className="h-auto w-7" src={flip} alt="click to flip" />
         </div>
       </motion.div>
     </Tilt>
