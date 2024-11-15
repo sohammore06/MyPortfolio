@@ -47,7 +47,11 @@ const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl ${styles.padding}`}
+        style={{
+          width: "100%",
+          height: window.innerWidth <= 640 ? "200px" : "300px",
+        }}
       >
         <motion.div variants={textVariant()}>
           <h2 className={styles.sectionHeadText}>Resume.</h2>
@@ -58,7 +62,10 @@ const Feedbacks = () => {
         {/* Embed the resume PDF */}
         <iframe 
           src="https://drive.google.com/file/d/1q8RsP4Lalnm7mMGe7lTmPjmCmgw7tRgh/preview"
-          className="w-full h-[600px]"
+          style={{
+            width: "100%",
+            height: window.innerWidth <= 640 ? "500px" : "600px",
+          }}
           frameBorder="0"
         ></iframe>
         
