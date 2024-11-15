@@ -4,6 +4,7 @@ import * as THREE from 'three';
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import hero from "../assets/hero.jpeg"; 
 
 
 
@@ -49,7 +50,7 @@ const Hero = () => {
 
       {isMobile ? (
         <div className='absolute inset-0 flex justify-center items-center'>
-          <img src='src/assets/hero.jpeg'
+          <img src={hero}
             alt='Mobile View Placeholder'
             className='w-80 h-auto mt-[40%]' // Adjust the dimensions as needed
           />
