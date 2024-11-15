@@ -58,7 +58,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Front-End Developer",
+    title: "Front-End",
     icon: web,
     backendIcon: backend,
     backendimg: backendimg,
@@ -79,6 +79,14 @@ const services = [
 ];
 
 const technologies = [
+  {
+    name: "docker",
+    icon: docker,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
   {
     name: "python",
     icon: python,
@@ -124,16 +132,8 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
   // {
   //   name: "linux",

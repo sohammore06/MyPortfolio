@@ -44,31 +44,36 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  const isDesktop = window.innerWidth > 640;
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding}`}
         style={{
           width: "100%",
-          height: window.innerWidth <= 640 ? "200px" : "300px",
+          height: isDesktop ? "300px" : "200px",
         }}
       >
         <motion.div variants={textVariant()}>
           <h2 className={styles.sectionHeadText}>Resume.</h2>
         </motion.div>
       </div>
-      
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-col items-center gap-7`}>
-        {/* Embed the resume PDF */}
-        <iframe 
-          src="https://drive.google.com/file/d/1q8RsP4Lalnm7mMGe7lTmPjmCmgw7tRgh/preview"
-          style={{
-            width: "100%",
-            height: window.innerWidth <= 640 ? "500px" : "600px",
-          }}
-          frameBorder="0"
-        ></iframe>
-        
+
+      <div
+        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-col items-center gap-7`}
+      >
+        {/* Render the resume preview only for desktop */}
+        {isDesktop && (
+          <iframe
+            src="https://drive.google.com/file/d/1q8RsP4Lalnm7mMGe7lTmPjmCmgw7tRgh/preview"
+            style={{
+              width: "100%",
+              height: "600px",
+            }}
+            frameBorder="0"
+          ></iframe>
+        )}
+
         {/* Download button */}
         <a
           href="https://drive.google.com/uc?export=download&id=1q8RsP4Lalnm7mMGe7lTmPjmCmgw7tRgh"

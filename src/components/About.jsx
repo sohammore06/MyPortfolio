@@ -76,15 +76,18 @@ const ServiceCard = ({ index, title, icon, backendIcon, onFlip }) => {
             <>
               <img src={icon} alt="web-development" className="w-16 h-16 object-contain" />
               <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+              <h5 className="text-white text-center">HTML | CSS | Javascript | ReactJs | Angular JS | BootStrap | Tailwind | Figma </h5>
             </>
           ) : (
             <>
               <img src={backendIcon} alt="backend-development" className="w-16 h-16 object-contain" />
               <h3 className="text-white text-[20px] font-bold text-center" style={{ transform: "scaleX(-1)" }}>
-                Backend Developer
-              </h3>
+                Backend</h3>
+            <h5  style={{ transform: "scaleX(-1)" }} className="text-white text-center">Python | Django | PHP | MySQL | Neo4j | Linux </h5>
             </>
           )}
+
+          <img className="h-auto w-7" src="src/assets/arrow.png" alt="" />
         </div>
       </motion.div>
     </Tilt>

@@ -164,6 +164,11 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .distorting-image {
+    display: none;
+  }
+}
 
 
 @keyframes mulShdSpin {

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import * as THREE from 'three';
 
@@ -7,6 +8,24 @@ import { ComputersCanvas } from "./canvas";
 
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+
+    // Check on mount
+    handleResize();
+
+    // Add resize listener
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -28,7 +47,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {isMobile ? (
+        <div className='absolute inset-0 flex justify-center items-center'>
+          <img src='src/assets/hero.jpeg'
+            alt='Mobile View Placeholder'
+            className='w-80 h-auto mt-[40%]' // Adjust the dimensions as needed
+          />
+        </div>
+      ) : (
+        <ComputersCanvas />
+      )}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
