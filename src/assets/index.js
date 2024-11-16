@@ -35,6 +35,7 @@ import microsoft from "./company/microsoft.webp";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import vendor from "./vendor.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -69,6 +70,7 @@ export {
   microsoft,
   tesla,
   carrent,
+  vendor,
   jobit,
   tripguide,
   python,

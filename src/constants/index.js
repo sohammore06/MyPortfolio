@@ -30,7 +30,8 @@ import {
   linux,
   github,
   frontendimg,
-  backendimg
+  backendimg,
+  vendor
 } from "../assets";
 
 export const navLinks = [
@@ -153,14 +154,13 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2023 - Present",
     points: [
-      `<b>Vendor Management App</b>: Leading the development of a scalable vendor management solution from scratch, projected to generate 50K+ monthly revenue per client, enhancing invoice and PO management for improved client satisfaction.
-      <a href="https://www.figma.com/design/8v6k368ENdEgQqL8GlbaWF/Factech-Vendor?node-id=0-1&node-type=canvas&t=cbaTJlSKfPfF9f2E-0" target="_blank" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
-        Check Design here
-      </a>`,
-      `<b>Frontend Leadership</b>: Redesigned UI/UX for the 
+      `<a href="#project" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
+        <b>FacTech Vendor</b>
+      </a>: Leading the development of a scalable vendor management solution from scratch, projected to generate 50K+ monthly revenue per client, enhancing invoice and PO management for improved client satisfaction.`,
+      `<b>Frontend Leadership</b>: Redesigned UI/UX for the entire
       <a href="https://factech.co.in/" target="_blank" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
         Factech site
-      </a>, Admin portal, and products like Kaizen, Purchase, and Inventory, boosting user engagement by <b>30%</b> and reducing support tickets by <b>20%</b>.`,
+      </a>including the Admin portal and other products like Kaizen, Purchase, and Inventory, boosting user engagement by <b>30%</b> and reducing support tickets by <b>20%</b>.`,
       "<b>Backend Optimization</b>: Streamlined RESTful APIs, achieving a <b>40% increase</b> in data processing speed and a <b>25% improvement</b> in system response time, enhancing platform performance.",
       "<b>Mentorship & Team Building</b>: Mentored and guided interns to achieve a <b>100% task completion rate</b>, fostering team collaboration and productivity."
     ],       
@@ -237,9 +237,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Factech Vendor",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Building a <b>Vendor Management App</b> enabling vendors to log in, manage profiles, and view a <b>Dashboard</b> with insights into Purchase Orders, Invoices, Payments, and Statuses. <b>Features</b>: Simplified PO management, invoice creation and tracking, profile editing, and real-time status updates. Tech Stack: <b>React.js</b> for frontend, <b>PHP Laravel/Lumen</b> for backend, with <b>MySQL</b> and <b>Neo4j</b> for database management. Focused on <b>Responsiveness</b> across all devices, scalability, intuitive UX/UI, and performance, designed to handle 10,000+ vendors and streamline procurement processes.",
     tags: [
       {
         name: "react",
@@ -254,7 +254,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: vendor,
     source_code_link: "https://github.com/",
   },
   {
