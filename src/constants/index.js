@@ -239,19 +239,23 @@ const projects = [
   {
     name: "Factech Vendor",
     description:
-      "Building a <b>Vendor Management App</b> enabling vendors to log in, manage profiles, and view a <b>Dashboard</b> with insights into Purchase Orders, Invoices, Payments, and Statuses. <b>Features</b>: Simplified PO management, invoice creation and tracking, profile editing, and real-time status updates. Tech Stack: <b>React.js</b> for frontend, <b>PHP Laravel/Lumen</b> for backend, with <b>MySQL</b> and <b>Neo4j</b> for database management. Focused on <b>Responsiveness</b> across all devices, scalability, intuitive UX/UI, and performance, designed to handle 10,000+ vendors and streamline procurement processes.",
+      "Building a <b>Vendor Management App</b> enabling vendors to log in, manage profiles, and view a <b>Dashboard</b> with insights into Purchase Orders, Invoices, Payments, and their statuses. <b>Features</b>: Simplified PO management, invoice creation and tracking, profile editing, and real-time status updates. Tech Stack: <b>React.js</b> for frontend, <b>PHP Laravel/Lumen</b> for backend, with <b>MySQL</b> and <b>Neo4j</b> for database management. Focused on <b>Responsiveness</b> across all devices, scalability, intuitive UX/UI, and performance, designed to handle 10,000+ vendors and streamline procurement processes.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "php",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "neo4j",
         color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
       },
     ],
     image: vendor,

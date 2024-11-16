@@ -236,6 +236,7 @@
 
 .close-btn {
   background: none;
+  color: white !important;
   border: none;
   cursor: pointer;
   position: absolute;
@@ -272,8 +273,9 @@
     width: 100%; /* Increase width for smaller screens */
     height: 100%; /* Allow height to adjust dynamically */
     max-height: 100%; /* Limit height to 95% of the viewport */
-    padding: 0px !important; /* Reduce padding */
-    background-color: #100d25;
+    padding: 0px !important; /*  padding */
+    background-color: #915eff;
+    border-radius: 5%;
   }
 
   .modal-overlay{
