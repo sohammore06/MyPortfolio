@@ -2,6 +2,11 @@ import React, { useState } from "react";
 // import Tilt from "react-tilt";
 import Tilt from "react-parallax-tilt";
 import Modal from "react-modal"; 
+import { AiOutlineClose } from "react-icons/ai";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 import { motion } from "framer-motion";
 
@@ -96,6 +101,41 @@ const Works = () => {
     setIsModalOpen(false);
   };
 
+  // Carousel settings for react-slick
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
+  // Sample carousel images
+  const carouselImages = [
+    "src/assets/carousel/design1.png",
+    "src/assets/carousel/design2.png",
+    "src/assets/carousel/design3.png",
+    "src/assets/carousel/design4.png",
+    "src/assets/carousel/design5.png",
+    "src/assets/carousel/design6.png",
+    "src/assets/carousel/design1.png",
+  ];
+
+  const getModalStyles = () => {
+    const isSmallScreen = window.innerWidth <= 768;
+    return {
+      content: {
+        maxWidth: isSmallScreen ? "95%" : "60%", // Wider on small screens
+        width: isSmallScreen ? "95%" : "60%",
+        height: isSmallScreen ? "95%" : "50%", // Taller on small screens
+        margin: "auto",
+        padding: "1px",
+        borderRadius: "5%",
+      },
+    };
+  };
+
   return (
     <>
       {/* Modal Implementation */}
@@ -104,27 +144,26 @@ const Works = () => {
         onRequestClose={closeModal}
         contentLabel="Factech Vendor Details"
         overlayClassName="modal-overlay"
-        style={{
-          content: {
-            maxWidth: "60%",
-            width: "60%",
-            height: "60%",
-            margin: "auto",
-            borderRadius: "8px",
-          },
-        }}
+        style={getModalStyles()}
       >
         <div className="modal-content">
           <button onClick={closeModal} className="close-btn">
-            Close
+            <AiOutlineClose size={24} />
           </button>
-          <h2>Factech Vendor</h2>
-          <p>
-            Leading the development of a scalable vendor management solution
-            from scratch, projected to generate 50K+ monthly revenue per client,
-            enhancing invoice and PO management for improved client
-            satisfaction.
-          </p>
+          <h2 className="text-center mt-3">Design prototype</h2>
+
+          {/* Carousel Implementation */}
+          <Slider {...carouselSettings} className="mt-5">
+            {carouselImages.map((image, index) => (
+              <div key={index} className="carousel-slide">
+                <img
+                  src={image}
+                  alt={`Slide ${index}`}
+                  className="carousel-image"
+                />
+              </div>
+            ))}
+          </Slider>
         </div>
       </Modal>
 

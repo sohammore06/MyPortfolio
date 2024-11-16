@@ -211,6 +211,9 @@
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
 }
 .close-btn {
   background-color: #e74c3c;
@@ -229,6 +232,67 @@
   right: 0;
   bottom: 0;
   z-index: 999; /* Ensure it overlays content */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+}
+
+.close-btn svg {
+  color: #ffffff; /* Adjust color */
+}
+
+.carousel-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100%; 
+}
+
+.carousel-image {
+  max-width: 60%; 
+  max-height: 80%; 
+  object-fit: contain; 
+  border-radius: 8px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 100%; /* Increase width for smaller screens */
+    height: 100%; /* Allow height to adjust dynamically */
+    max-height: 100%; /* Limit height to 95% of the viewport */
+    padding: 0px !important; /* Reduce padding */
+    background-color: #100d25;
+  }
+
+  .modal-overlay{
+    background-color: rgba(0, 0, 0, 0.5); /* Light black background */
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999; /* Ensure it overlays content */
+    height: 40% !important;
+    width: 90% !important;
+    padding: 0px !important;
+  }
+
+  .carousel-image {
+    max-width: 90%; /* Adjust width for smaller screens */
+    max-height: 70vh; /* Reduce height for smaller screens */
+  }
 }
 
 @keyframes mulShdSpin {
