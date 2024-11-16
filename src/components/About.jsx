@@ -88,7 +88,9 @@ const ServiceCard = ({ index, title, icon, backendIcon, onFlip }) => {
             </>
           )}
 
-          <img className="h-auto w-7" src={flip} alt="click to flip" />
+          <div className="container">
+            <img className="h-auto w-7 animate-flip" src={flip} alt="click to flip" />
+          </div>
         </div>
       </motion.div>
     </Tilt>
@@ -115,10 +117,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        A dedicated Full-Stack Developer with a strong blend of frontend and backend skills, 
+        A dedicated <span className="text-white">Full-Stack Developer</span> with a strong blend of <span className="text-white">frontend</span> and <span className="text-white">backend</span> skills, 
         I excel in creating impactful web applications and optimizing performance. With experience in modern tools like 
-        Docker, Django, and ReactJS, I bring both technical depth and a commitment to user-centered design, fostering effective, 
-        streamlined solutions across development environments.
+        <span className="text-white"> Docker, Django, ReactJS and many more...</span>, I bring both technical depth and a commitment to user-centered design, fostering effective, 
+        streamlined solutions across development environments. Also keenly interested in cloud technologies like <span className="text-white">AWS</span>, leveraging its services for <span className="text-white">efficient deployment, scalability, and infrastructure optimization.</span> 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

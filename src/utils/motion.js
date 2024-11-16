@@ -2,7 +2,7 @@ export const textVariant = (delay) => {
   return {
     hidden: {
       y: -50,
-      opacity: 0,
+      opacity: window.innerWidth <= 768 ? 1 : 0,
     },
     show: {
       y: 0,
@@ -10,11 +10,12 @@ export const textVariant = (delay) => {
       transition: {
         type: "spring",
         duration: 1.25,
-        delay: delay,
+        delay: window.innerWidth <= 768 ? 0 : delay,
       },
     },
   };
 };
+
 
 export const fadeIn = (direction, type, delay, duration) => {
   return {

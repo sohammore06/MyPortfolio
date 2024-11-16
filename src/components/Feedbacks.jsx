@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import resume from "../assets/resume.png";
+
 
 const FeedbackCard = ({
   index,
@@ -46,17 +48,24 @@ const FeedbackCard = ({
 const Feedbacks = () => {
   const isDesktop = window.innerWidth > 640;
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div className={`mt-10 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding}`}
+        className={`bg-tertiary rounded-2xl ${styles.padding} flex items-center justify-between`}
         style={{
           width: "100%",
           height: isDesktop ? "300px" : "200px",
         }}
       >
-        <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant()} className="flex-1">
           <h2 className={styles.sectionHeadText}>Resume.</h2>
         </motion.div>
+        {!isDesktop && (
+          <img
+            src={resume}
+            alt="Resume Icon"
+            className="w-12 h-12 mt-0"
+          />
+        )}
       </div>
 
       <div
@@ -79,7 +88,7 @@ const Feedbacks = () => {
           href="https://drive.google.com/uc?export=download&id=1q8RsP4Lalnm7mMGe7lTmPjmCmgw7tRgh"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary text-white px-4 py-2 rounded-md mt-4"
+          className="bg-primary text-white px-4 py-2 rounded-md mt-4 border"
         >
           Download Resume
         </a>

@@ -13,6 +13,15 @@ import CanvasLoader from "../Loader";
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
+  const decalPositions = [
+    { position: [0, 0, 1], rotation: [0, 0, 0] }, // Front
+    { position: [0, 0, -1], rotation: [Math.PI, 0, 0] }, // Back
+    { position: [1, 0, 0], rotation: [0, Math.PI / 2, 0] }, // Right
+    { position: [-1, 0, 0], rotation: [0, -Math.PI / 2, 0] }, // Left
+    { position: [0, 1, 0], rotation: [Math.PI / 2, 0, 0] }, // Top
+    { position: [0, -1, 0], rotation: [-Math.PI / 2, 0, 0] }, // Bottom
+  ];
+
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
@@ -25,13 +34,16 @@ const Ball = (props) => {
           polygonOffsetFactor={-5}
           flatShading
         />
+      {decalPositions.map((decalPos, index) => (
         <Decal
-          position={[0, 0, 1]}
-          rotation={[2 * Math.PI, 0, 6.25]}
-          scale={1}
+          key={index}
+          position={decalPos.position}
+          rotation={decalPos.rotation}
+          scale={0.8}
           map={decal}
           flatShading
         />
+      ))}
       </mesh>
     </Float>
   );

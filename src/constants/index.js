@@ -153,11 +153,17 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2023 - Present",
     points: [
-      "Vendor Management App Development: Currently developing a vendor management app, enabling vendors to manage invoices and monitor purchase orders efficiently. This solution is expected to generate a profit of over 50K per month for a single client, with scalability potential across multiple clients, providing a substantial revenue stream and improved client satisfaction",
-      "Frontend Development: Led the redesign and enhancement of the total system Admin portal and products like Kaizen , Purchase, Inventory,etc..., increasing user engagement by 30% and reducing customer support requests by 20% through optimized UI/UX improvements, resulting in heightened system satisfaction and ease of use.",
-      "Backend Development: Developed and optimized RESTful APIs, achieving a 40% increase in data processing speed and a 25% improvement in system response time by streamlining backend processes, directly impacting overall platform efficiency and user experience.",
-      "Mentorship and Team Support: Mentored and managed multiple interns, successfully guiding them to complete key tasks on schedule and fostering their growth, resulting in a 100% task completion rate and enhancing team productivity and cohesion.",
-    ],
+      `<b>Vendor Management App</b>: Leading the development of a scalable vendor management solution from scratch, projected to generate 50K+ monthly revenue per client, enhancing invoice and PO management for improved client satisfaction.
+      <a href="https://www.figma.com/design/8v6k368ENdEgQqL8GlbaWF/Factech-Vendor?node-id=0-1&node-type=canvas&t=cbaTJlSKfPfF9f2E-0" target="_blank" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
+        Check Design here
+      </a>`,
+      `<b>Frontend Leadership</b>: Redesigned UI/UX for the 
+      <a href="https://factech.co.in/" target="_blank" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
+        Factech site
+      </a>, Admin portal, and products like Kaizen, Purchase, and Inventory, boosting user engagement by <b>30%</b> and reducing support tickets by <b>20%</b>.`,
+      "<b>Backend Optimization</b>: Streamlined RESTful APIs, achieving a <b>40% increase</b> in data processing speed and a <b>25% improvement</b> in system response time, enhancing platform performance.",
+      "<b>Mentorship & Team Building</b>: Mentored and guided interns to achieve a <b>100% task completion rate</b>, fostering team collaboration and productivity."
+    ],       
   },
   {
     title: "Python [Django] Developer",
@@ -166,8 +172,8 @@ const experiences = [
     iconBg: "#fff",
     date: "Dec 2022 - Mar 2023",
     points: [
-      "UI/UX Enhancement: Led the design and implementation of UI/UX for a new project from the ground up, leveraging Google Charts to deliver visually engaging and data-driven insights, resulting in a 40% improvement in user interaction and satisfaction through effective data visualization.",
-      "Backend Development: Developed optimized Python functions to emulate complex Excel functionalities, while managing efficient database CRUD operations via Django, creating a seamless, user-friendly solution that streamlined decision-making processes and improved operational efficiency by 30%."
+      `<b>UI/UX Enhancement</b>: Led the design and implementation of <b>Responsive UI/UX</b> for a new project from the ground up, leveraging Google Charts to deliver visually engaging and data-driven insights, resulting in a <b>40%</b> improvement in user interaction and satisfaction through effective data visualization.`,
+      `<b>Backend Development</b>: Developed optimized Python functions to emulate complex Excel functionalities, while managing efficient database CRUD operations via <b>Django</b>, creating a seamless, user-friendly solution that streamlined decision-making processes and improved operational efficiency by <b>30%</b>.`
     ],
   },
   {
@@ -177,10 +183,14 @@ const experiences = [
     iconBg: "#383E56",
     date: "Dec 2021 - Mar 2022",
     points: [
-      "Earned recognition as one of the top 1000 interns, receiving a Microsoft Azure-branded T-shirt and certification for outstanding performance.",
-      "Completed 190+ hours of self-paced learning on core Azure services, covering essential cloud skills for industry relevance.",
+      `Earned recognition as one of the <b>Top 1000 interns</b>, receiving a 
+      <a href="https://www.linkedin.com/posts/soham-shankar-more_learn-futurereadytalent-internship-activity-6916800984048431104-zLKg?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
+        Microsoft Azure Certification
+      </a>, 
+      for outstanding performance.`,
+      "Completed 190+ hours of self-paced learning on core Azure services, covering essential <b>cloud skills<b> for industry relevance.",
       "Attended 5 industry-aligned sessions and participated in hands-on labs with Microsoft Learn sandbox for practical experience.",
-      "Successfully deployed a project on Microsoft Azure, gaining real-world insights into various Azure services and their applications.",
+      "Successfully deployed a <b>Project</b> on Microsoft Azure, gaining real-world insights into various Azure services and their applications.",
     ],
   },
   // {
