@@ -31,7 +31,9 @@ import {
   github,
   frontendimg,
   backendimg,
-  vendor
+  vendor,
+  flashcard,
+  diary
 } from "../assets";
 
 export const navLinks = [
@@ -259,33 +261,33 @@ const projects = [
       },
     ],
     image: vendor,
-    source_code_link: "https://github.com/",
+    source_code_link: "",
   },
   {
-    name: "Job IT",
+    name: "FlashCard.AI",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "AI-Based Flashcard Generator: Engineered an AI-driven tool using the Gemini API to create tailored study aids, enhancing learning and retention; built with React and Vite for high-speed performance, and designed with Tailwind CSS featuring sophisticated animations and interactive elements to boost user engagement; prioritized accessibility and usability to support efficient learning for a diverse audience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "gemini-api",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "AI",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: flashcard,
+    source_code_link: "https://flash-card-ai-plum.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Python [Django] Diary",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Personal Diary Web Application: Developed a secure, dynamic diary application using Python Django, featuring comprehensive user authentication, including signup, login, and logout functionalities. The platform includes a dashboard that displays total notes, note categories, and recent notes. Users can manage their entries with options to add, edit, and delete notes and categories, organized by category for streamlined access. Additionally, the application offers a search functionality to quickly locate specific notes, enhancing user efficiency and interaction.",
     tags: [
       {
         name: "nextjs",
@@ -300,8 +302,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: diary,
+    source_code_link: "https://github.com/sohammore06/MyDiary",
   },
 ];
 

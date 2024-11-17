@@ -37,6 +37,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import vendor from "./vendor.png";
 import jobit from "./jobit.png";
+import diary from "./diary.png";
+import flashcard from "./flashcard.png";
 import tripguide from "./tripguide.png";
 
 
@@ -76,5 +78,7 @@ export {
   python,
   linux,
   backendimg,
-  frontendimg
+  frontendimg,
+  flashcard,
+  diary
 };

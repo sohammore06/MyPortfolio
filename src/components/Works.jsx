@@ -63,12 +63,12 @@ const ProjectCard = ({
     const isSmallScreen = window.innerWidth <= 768;
     return {
       content: {
-        maxWidth: isSmallScreen ? "95%" : "60%", // Wider on small screens
-        width: isSmallScreen ? "95%" : "60%",
-        height: isSmallScreen ? "95%" : "50%", // Taller on small screens
+        maxWidth: isSmallScreen ? "95%" : "80%", // Wider on small screens
+        width: isSmallScreen ? "95%" : "80%",
+        height: isSmallScreen ? "95%" : "80%", // Taller on small screens
         margin: "auto",
         padding: "1px",
-        borderRadius: "5%",
+        borderRadius: isSmallScreen ? "5%" : "1%",
       },
     };
   };
@@ -194,5 +194,6 @@ const Works = () => {
     </>
   );
 };
+Modal.setAppElement('#root');
 
 export default SectionWrapper(Works, "project");
