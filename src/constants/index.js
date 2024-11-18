@@ -282,7 +282,8 @@ const projects = [
       },
     ],
     image: flashcard,
-    source_code_link: "https://flash-card-ai-plum.vercel.app/",
+    // source_code_link: "https://flash-card-ai-plum.vercel.app/",
+    source_code_link: "https://github.com/sohammore06/FlashCard.AI",
   },
   {
     name: "Python [Django] Diary",

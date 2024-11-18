@@ -12,6 +12,14 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
+import { creator } from "../assets";
+import { design1 } from "../assets";
+import { design2 } from "../assets";
+import { design3 } from "../assets";
+import { design4 } from "../assets";
+import { design5 } from "../assets";
+import { design6 } from "../assets";
+
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -50,14 +58,15 @@ const ProjectCard = ({
 
   // Sample carousel images
   const carouselImages = [
-    "src/assets/carousel/design3.png",
-    "src/assets/carousel/design1.png",
-    "src/assets/carousel/design2.png",
-    "src/assets/carousel/design4.png",
-    "src/assets/carousel/design5.png",
-    "src/assets/carousel/design6.png",
-    "src/assets/carousel/design1.png",
+    design3,
+    design1,
+    design2,
+    design4,
+    design5,
+    design6,
+    design1,
   ];
+  
 
   const getModalStyles = () => {
     const isSmallScreen = window.innerWidth <= 768;
@@ -132,7 +141,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={index === 0 ? creator : github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
