@@ -74,7 +74,7 @@ const Feedbacks = () => {
         {/* Render the resume preview only for desktop */}
         {isDesktop && (
           <iframe
-            src="https://drive.google.com/file/d/192I4qBFxEw7XEHE8BBGJV_JgXIsaWCbO/view?usp=sharing"
+            src="https://drive.google.com/file/d/192I4qBFxEw7XEHE8BBGJV_JgXIsaWCbO/preview"
             style={{
               width: "100%",
               height: "600px",
@@ -85,7 +85,7 @@ const Feedbacks = () => {
 
         {/* Download button */}
         <a
-          href="https://drive.google.com/uc?export=download&id=1q8RsP4Lalnm7mMGe7lTmPjmCmgw7tRgh"
+          href="https://drive.google.com/uc?export=download&id=192I4qBFxEw7XEHE8BBGJV_JgXIsaWCbO"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-white px-4 py-2 rounded-md mt-4 border"
