@@ -32,6 +32,8 @@ import linux from "./tech/linux.png";
 import backendimg from "./backend.jpg";
 import frontendimg from "./frontend.jpg";
 
+import resumeBlog from "./resumeBlog.jpg";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -93,4 +95,5 @@ export {
   design4,
   design5,
   design6,
+  resumeBlog
 };
