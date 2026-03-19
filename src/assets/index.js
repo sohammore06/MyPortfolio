@@ -38,12 +38,13 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import factech from "./company/factech-logo.png";
+import intellifySolutions from "./company/intellify-solutions-logo.png";
 import smartSolutions from "./company/smart-solutions.jpeg";
 import microsoft from "./company/microsoft.webp";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import vendor from "./vendor.png";
+import mycredworldStorefront from "./mycredworld-storefront.png";
 import jobit from "./jobit.png";
 import diary from "./diary.png";
 import flashcard from "./flashcard.png";
@@ -76,11 +77,12 @@ export {
   shopify,
   starbucks,
   factech,
+  intellifySolutions,
   smartSolutions,
   microsoft,
   tesla,
   carrent,
-  vendor,
+  mycredworldStorefront,
   jobit,
   tripguide,
   python,

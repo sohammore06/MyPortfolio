@@ -1,14 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+const scrollToSectionId = (id) => {
+  const el = document.getElementById(id);
+  el?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
 const Navbar = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const goToSection = (id, title) => {
+    setActive(title);
+    setToggle(false);
+
+    if (location.pathname !== "/") {
+      sessionStorage.setItem("pendingSectionScroll", id);
+      navigate("/");
+      return;
+    }
+
+    scrollToSectionId(id);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,14 +71,19 @@ const Navbar = () => {
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+            <li key={nav.id}>
+              <a
+                href={`/#${nav.id}`}
+                className={`${
+                  active === nav.title ? "text-white" : "text-secondary"
+                } cursor-pointer text-[18px] font-medium hover:text-white`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  goToSection(nav.id, nav.title);
+                }}
+              >
+                {nav.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -78,17 +103,19 @@ const Navbar = () => {
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                <li key={nav.id}>
+                  <a
+                    href={`/#${nav.id}`}
+                    className={`font-poppins cursor-pointer text-[16px] font-medium ${
+                      active === nav.title ? "text-white" : "text-secondary"
+                    }`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      goToSection(nav.id, nav.title);
+                    }}
+                  >
+                    {nav.title}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -1,29 +1,17 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Blog, StarsCanvas, Footer } from "./components";
+import PortfolioHome from "./pages/PortfolioHome";
+import BlogArticlePage from "./pages/BlogArticlePage";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Blog />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<PortfolioHome />} />
+        <Route path="/blog/:slug" element={<BlogArticlePage />} />
+      </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

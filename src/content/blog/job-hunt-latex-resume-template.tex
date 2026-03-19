@@ -1,0 +1,174 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\usepackage{charter}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+ \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+ \item\small{
+ {#1 \vspace{-2pt}}
+ }
+}
+
+\newcommand{\resumeSubheading}[4]{
+ \vspace{-2pt}\item
+ \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+ \textbf{\large #1} & \textbf{\small #2} \\
+ \textit{\large#3} & \textit{\small #4} \\
+ \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+ \item
+ \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+ \small#1 & \textbf{\small #2}\\
+ \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Resume starts here
+
+\begin{document}
+
+% Heading
+\begin{center}
+ {\Huge \scshape Your Name Here} \\ \vspace{1pt}
+ \small \href{tel:+91999999999}{\raisebox{-0.2\height}\faMobile\ \underline{+91-91999999999} ~} \href{mailto:youremail@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{youremail@gmail.com}} ~ 
+ \href{https://www.linkedin.com/in/your-linkedin/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} ~
+ \href{https://github.com/github}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}}
+\end{center}
+
+% Experience
+\section{Work Experience}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ {Company Name}{Mar 2023 - Present}
+ {Role}{Pune, India}
+ \resumeItemListStart
+ \resumeItem{ Led the development of a high-performance \textbf{ dashboard} for the \textbf{Admin Web App}, used by facility managers to track assets, work orders, and breakdowns. Built fast and responsive components with \textbf{Angular Js} to optimize performance and ensure a seamless user experience. Incorporated \textbf{Bootstrap} for a clean, mobile-first design that improved accessibility and engagement across devices.}
+ \resumeItem{Took charge of building and maintaining various features from scratch, working full-stack on various services and apps like Kaizen, ISM, VMS, etc. On the front-end, I used \textbf{ReactJS} to create dynamic, reusable components and \textbf{AngularJS} for other parts of the app where stability was key. On the back-end, I leveraged \textbf{PHP (Laravel)} to build secure and scalable APIs, while optimizing \textbf{MySQL} for better query performance and working with \textbf{Neo4j} to model and manage complex data relationships.}
+ \resumeItem{ Developed some important features like \textbf{Enterprise Dashboard}, \textbf{Attendance Report}, \textbf{Compliance Enhancement}, \textbf{Bulk Import} for Staffs, Shift, PMs, etc \textbf{} focusing on both back-end logic and front-end optimization. I handled data chunking and \textbf{pagination} on the back-end to ensure scalability when dealing with large datasets. On the front-end, I used \textbf{ReactJS} to create a smooth, fast, and interactive experience for users using \textbf{skeleton loading, infinite scroll}.}
+ % \resumeItem{ Contributed to the \textbf{React Native app} for technicians, designed for viewing and managing work orders. My primary focus was on ensuring the \textbf{UI/UX design} was intuitive, providing a seamless and user-friendly experience on mobile devices, which greatly improved the efficiency of field technicians.}
+ \resumeItem{Developed and integrated \textbf{RESTful APIs} for multiple projects. My work focused on creating scalable, maintainable, and secure services that ensured smooth functionality across the platform.}
+\resumeItemListEnd
+\resumeItemListEnd
+ \resumeSubheading
+ {Company Name}{Dec 2022 - Mar 2023}
+ {Role}{}
+ \resumeItemListStart
+ \resumeItem{\textbf{Smart Estimator}: Worked on a smart estimator app that gathered inputs from users about engineering component requirements and provided cost estimations along with vendor details. Used \textbf{Python (Django)} to develop backend functions for calculating estimations based on quantity, dimensions, and other parameters. Displayed the data using Google charts for easy of understanding complex data}
+ \resumeItemListEnd
+% \resumeSubheading
+% {Microsoft Virtual Intern}{Dec 2021 - Mar 2022}
+% {Intern}{}
+% \resumeItemListStart
+% \resumeItem{Recognized as a \textbf{Top 1000} intern with a \underline{\href{https://www.linkedin.com/posts/soham-shankar-more_learn-futurereadytalent-internship-activity-6916800984048431104-zLKg?utm_source=share&utm_medium=member_desktop}{\textbf{Microsoft Azure Certification}}}; completed over 190 hours of training on Azure, developing key \textbf{cloud skills}.}
+% \resumeItem{Engaged in 5 industry sessions and practical labs using the Microsoft Learn \textbf{sandbox}; \textbf{deployed} a live project on Azure, enhancing real-world tech application skills.}
+% \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+ \resumeSubHeadingListStart
+ \resumeProjectHeading
+ {\textbf{Personal Portfolio Website} -- \href{link-here}{View Website}}{}
+ \resumeItemListStart
+ \resumeItem{Developed a visually striking portfolio website using \textbf{ReactJS} and \textbf{Vite}, integrating \textbf{Three.js} for dynamic \textbf{3D} animations and \textbf{Tailwind CSS} for responsive design, enhancing user engagement.}
+ \resumeItem{Implemented \textbf{EmailJS} in contact forms to streamline professional communications.}
+ \resumeItemListEnd
+ \vspace{-10}
+\resumeProjectHeading
+ {\textbf{AI-Based Flashcard Generator} -- \href{link-here}{View Project}}{}
+ \resumeItemListStart
+ \resumeItem{Created an AI-based flashcard tool using \textbf{Gemini API} which dynamically generates educational content for fast revision.}
+ \resumeItem{Leveraged \textbf{ReactJS} for dynamic UI components, \textbf{Vite} for optimized development and build processes, ensuring scalability and seamless user experience.}
+ \resumeItemListEnd
+ \vspace{-10}
+ 
+\resumeProjectHeading
+ {\textbf{Personal Diary Web Application} -- \href{link-here}{View Project}}{}
+ \resumeItemListStart
+ \resumeItem{Created a fully responsive personal diary application with \textbf{Django}, featuring user authentication (login/signup), a dashboard displaying note statistics, and comprehensive \textbf{CRUD} operations. Implemented search functionality and password management, ensuring a robust and user-friendly experience across mobile and desktop platforms.}
+ \resumeItemListEnd
+ \vspace{-10}
+ \resumeSubHeadingListEnd
+\vspace{5}
+% Skills
+\section{Skills}
+\resumeSubHeadingListStart
+ \resumeItem{\textbf{Frontend}: JavaScript, HTML, CSS, ReactJS, AngularJS, Tailwind CSS, Bootstrap, Redux}
+ \resumeItem{\textbf{Backend}: Python (Django), PHP (Laravel/Lumen), RESTful APIs, FastAPI}
+ \resumeItem{\textbf{Databases}: MySQL, Neo4j}
+ \resumeItem{\textbf{Tools \& Platforms}: Git, Docker, AWS, Jira, Bitbucket, SVN, Linux, Windows}
+ % \resumeItem{\textbf{Others}: RESTful APIs, Agile Methodologies, Vite, EmailJS, Three.js}
+\resumeSubHeadingListEnd
+
+% Education
+\section{Education}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ {College, Pune}{2022 - 2024}
+ {MSc in Computer Applications}{CGPA: 8.85/10}
+ \resumeSubheading
+ {College, Pune}{2019 - 2022}
+ {BSc in Computer Science}{CGPA: 8.99/10}
+ \resumeSubHeadingListEnd
+\end{document}

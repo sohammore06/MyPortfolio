@@ -18,6 +18,7 @@ import {
   meta,
   starbucks,
   factech,
+  intellifySolutions,
   smartSolutions,
   tesla,
   shopify,
@@ -31,9 +32,10 @@ import {
   github,
   frontendimg,
   backendimg,
-  vendor,
+  mycredworldStorefront,
   flashcard,
-  diary
+  diary,
+  resumeBlog,
 } from "../assets";
 
 export const navLinks = [
@@ -155,14 +157,28 @@ const technologies = [
 const experiences = [
   {
     title: "Full Stack Developer",
+    company_name: "Intellify Solutions",
+    icon: intellifySolutions,
+    iconBg: "#E8EEF8",
+    date: "June 2025 - Present",
+    points: [
+      `<b>Automation & Data Pipelines</b>: Built <b>Python</b>-based automation to capture and <b>push attendance into databases</b> reliably, reducing manual entry and improving data freshness for downstream reporting.`,
+      `<b>UNDP — .NET Platform</b>: Delivered enhancements on <b>.NET</b> solutions for UNDP initiatives; led <b>authentication modernization</b> by migrating from <b>SharePoint</b>-based auth to <b>MSAL</b>, plus broader <b>performance, stability, and UX</b> improvements across the stack.`,
+      `<b>Ingivity — Azure AI & Agents</b>: Used <b>Azure Portal</b> and <b>Azure AI Foundry</b> to design production-minded <b>AI agents</b> with <b>indexes, vector search, and curated knowledge sources</b> (Copilot-style grounding), iterating toward <b>lower latency and higher answer quality</b>.`,
+      `<b>Xometry / ThomasNet — .NET Engineering</b>: Own day-to-day <b>.NET</b> delivery: production <b>support</b>, <b>new feature development</b>, and <b>bug fixes</b> in fast-moving B2B workflows.`,
+      `<b>Engineering Craft & Cloud Growth</b>: Preparing for <b>AZ-204</b>; sharpening <b>DSA</b> and system design fundamentals; adopting <b>AI-assisted tooling</b> (e.g. Cursor, Claude) and exploring <b>agentic AI</b> patterns to ship faster with higher quality.`,
+    ],
+  },
+  {
+    title: "Full Stack Developer",
     company_name: "Factech",
     icon: factech,
     iconBg: "#E6DEDD",
-    date: "March 2023 - Present",
+    date: "March 2023 - June 2025",
     points: [
       `<a href="#project" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
-        <b>FacTech Vendor</b>
-      </a>: Leading the development of a scalable vendor management solution from scratch, projected to generate 50K+ monthly revenue per client, enhancing invoice and PO management for improved client satisfaction.`,
+        <b>My Cred World</b>
+      </a>: Architected and shipped <b>mycredworld.com</b> — a <b>mobile-first</b>, full-stack digital goods & gaming top-up store on <b>Spring Boot 3</b> + <b>Angular 19</b> — serving <b>3,500+ users</b> with strong performance under <b>peak traffic</b>, <b>Docker</b> deployment on <b>Hostinger</b>, multi-gateway payments, and automated supplier fulfillment.`,
       `<b>Frontend Leadership</b>: Redesigned UI/UX for the entire
       <a href="https://factech.co.in/" target="_blank" rel="noopener noreferrer" style="color: #3498db; text-decoration: underline;">
         Factech site
@@ -194,7 +210,7 @@ const experiences = [
         Microsoft Azure Certification
       </a>, 
       for outstanding performance.`,
-      "Completed 190+ hours of self-paced learning on core Azure services, covering essential <b>cloud skills<b> for industry relevance.",
+      "Completed 190+ hours of self-paced learning on core Azure services, covering essential <b>cloud skills</b> for industry relevance.",
       "Attended 5 industry-aligned sessions and participated in hands-on labs with Microsoft Learn sandbox for practical experience.",
       "Successfully deployed a <b>Project</b> on Microsoft Azure, gaining real-world insights into various Azure services and their applications.",
     ],
@@ -243,29 +259,29 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Factech Vendor",
+    name: "My Cred World",
     description:
-      "Building a <b>Vendor Management App</b> enabling vendors to log in, manage profiles, and view a <b>Dashboard</b> with insights into Purchase Orders, Invoices, Payments, and their statuses. <b>Features</b>: Simplified PO management, invoice creation and tracking, profile editing, and real-time status updates. Tech Stack: <b>React.js</b> for frontend, <b>PHP Laravel/Lumen</b> for backend, with <b>MySQL</b> and <b>Neo4j</b> for database management. Focused on <b>Responsiveness</b> across all devices, scalability, intuitive UX/UI, and performance, designed to handle 10,000+ vendors and streamline procurement processes.",
+      "Production <b>digital goods & gaming top-up marketplace</b> at <b>mycredworld.com</b> — designed <b>mobile-first</b> (PWA-style shell, bottom navigation, cart-first flows) and scaled to <b>3,500+ registered users</b> with headroom for <b>peak-hour traffic</b> during promos and game launches. <b>Backend</b>: <b>Spring Boot 3</b> on <b>Java 17</b>, <b>PostgreSQL</b> + <b>Redis</b>, <b>JWT + refresh</b> rotation, <b>Google OAuth</b> & <b>OTP</b>, <b>Spring Actuator</b>, structured logging, and <b>automated tests</b> on payment + fulfillment paths. <b>Integrations</b>: multiple <b>payment gateways</b>, <b>wallet / Cred Coins</b> ledger flows, and <b>automated provisioning</b> via <b>SmileOne</b>, <b>Moogold</b>, <b>GakoShop</b>, plus internal & subscription SKUs. <b>Frontend</b>: <b>Angular 19</b>, <b>Angular Material</b> + <b>Bootstrap</b>, charts & rich merchandising UI, <b>lazy-loaded</b> routes, role-based <b>auth guards</b>, and a full <b>admin</b> surface. <b>DevOps</b>: <b>Docker</b>-based images, health checks, and live deployment on <b>Hostinger</b> with observability for real-world SRE-style operations.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "php",
+        name: "spring-boot",
         color: "green-text-gradient",
       },
       {
-        name: "neo4j",
+        name: "angular-19",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
         color: "pink-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "docker",
         color: "blue-text-gradient",
       },
     ],
-    image: vendor,
-    source_code_link: "",
+    image: mycredworldStorefront,
+    source_code_link: "https://mycredworld.com",
   },
   {
     name: "FlashCard.AI",
@@ -309,6 +325,18 @@ const projects = [
     ],
     image: diary,
     source_code_link: "https://github.com/sohammore06/MyDiary",
+  },
+];
+
+/** Blog posts — `slug` must match a route in `pages/BlogArticlePage.jsx` (BLOG_REGISTRY). */
+export const blogPosts = [
+  {
+    id: 1,
+    slug: "job-hunt-latex-resume",
+    title: "Job Hunt Guide: Create a Professional Resume using LaTeX (Overleaf)",
+    description:
+      "Having a standout resume is the first step toward securing that dream job. Learn how to build a polished resume with LaTeX and Overleaf.",
+    image: resumeBlog,
   },
 ];
 
