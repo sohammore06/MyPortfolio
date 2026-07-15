@@ -74,7 +74,7 @@ const Feedbacks = () => {
         {/* Render the resume preview only for desktop */}
         {isDesktop && (
           <iframe
-            src="https://drive.google.com/file/d/17pRojSlBokhceWGKEfwF5lnY601OUWoh/preview"
+            src="https://drive.google.com/file/d/123bu31BiXzv5u8Y_nOrg_CosN--JKyJK/preview"
             style={{
               width: "100%",
               height: "600px",
